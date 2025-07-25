@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '@mui/material/Button';
 
 const SkillsForm = () => {
   const [skill, setSkill] = useState('');
@@ -8,12 +9,12 @@ const SkillsForm = () => {
       <h2>Add your Skills</h2>
       <input
         type="text"
-        value={skill}
-        name="skill" // This is used for Cypress test
+        name="skill"
         placeholder="Enter a skill"
-        onChange={(e) => setSkill(e.target.value)}
+        value={skill}
+        onChange={(e) => setSkill(e.target.value.toString())}
       />
-      <button id="add_skill">Add Skill</button>
+      <Button id="add_skill" variant="contained">Add Skill</Button>
     </div>
   );
 };
