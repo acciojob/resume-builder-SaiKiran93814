@@ -20,7 +20,7 @@ export default function ProfileForm() {
       <input name="phone" value={profile.phone} onChange={handleChange} placeholder="Phone Number" />
       <input name="address" value={profile.address} onChange={handleChange} placeholder="Address" />
       <input type="file" name="url" />
-        <button id="next">Next</button>
+        {/* <button id="next">Next</button> */}
     </div>
   );
 }

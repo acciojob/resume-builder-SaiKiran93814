@@ -19,7 +19,7 @@ export default function SocialForm() {
       <h2>Add your Social Media Links</h2>
       {/* ✅ ADD name="Social" to match Cypress */}
       <input
-      type='text'
+        type='text'
         name="Social" 
         placeholder="Social Links"
         value={social}
@@ -35,10 +35,10 @@ export default function SocialForm() {
         ))}
       </ul>
       {/* ✅ ADD navigation buttons to match other form steps */}
-      <div className="nav-buttons">
+      {/* <div className="nav-buttons">
         <button id="back">Back</button>
         <button id="next">Next</button>
-      </div>
+      </div> */}
     </div>
   );
 }
