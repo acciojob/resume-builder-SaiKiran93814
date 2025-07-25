@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectsForm = () => {
   return (
     <div>
-      <h2>Add your Mini Projects</h2> {/* EXACT text */}
+      <h2>Add your Mini Projects</h2>
       <input name="projectName" placeholder="Project Name" />
       <input name="techStack" placeholder="Tech Stack" />
       <textarea name="description" placeholder="Project Description"></textarea>

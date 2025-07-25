@@ -4,7 +4,7 @@ const SkillsForm = () => {
   return (
     <div>
       <h2>Add your Skills</h2>
-      <input name="skill" placeholder="Enter a skill" /> {/* EXACT name */}
+      <input type='text' value={skill} name="skill" placeholder="Enter a skill" /> {/* EXACT name */}
       <button id="add_skill">Add Skill</button>
       <div className="nav-buttons">
         <button id="back">Back</button>

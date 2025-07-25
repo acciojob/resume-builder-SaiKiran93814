@@ -3,7 +3,7 @@ import React from 'react';
 const EducationForm = () => {
   return (
     <div>
-      <h2>Add your Education Details</h2> {/* EXACT text match */}
+      <h2>Add your Education Details</h2>
       <input name="courseName" placeholder="Course Name" />
       <input name="completionYear" placeholder="Completion Year" />
       <input name="college" placeholder="College" />

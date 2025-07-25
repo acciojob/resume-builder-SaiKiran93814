@@ -19,17 +19,18 @@ export default function SocialForm() {
       <h2>Add your Social Media Links</h2>
       {/* ✅ ADD name="Social" to match Cypress */}
       <input
+      type='text'
         name="Social" 
-        placeholder="Social Link"
+        placeholder="Social Links"
         value={social}
         onChange={e => setSocial(e.target.value)}
       />
-      <button id="add_social" onClick={handleAdd}>Add Social</button>
+      <button id="add_social" onClick={handleAdd}>ADD SOCIAL</button>
       <ul>
         {socialLinks.map((s, i) => (
           <li key={i}>
             {s} 
-            <button onClick={() => dispatch(deleteSocial(i))}>Delete</button>
+            <button onClick={() => dispatch(deleteSocial(i))}>DELETE SOCIAL</button>
           </li>
         ))}
       </ul>
