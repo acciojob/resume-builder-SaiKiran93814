@@ -3,7 +3,7 @@ import React from 'react';
 const EducationForm = () => {
   return (
     <div>
-      <h2>Add your Education Details</h2>
+      <p>Add your Education Details</p>
       <input name="courseName" placeholder="Course Name" />
       <input name="completionYear" placeholder="Completion Year" />
       <input name="college" placeholder="College" />
