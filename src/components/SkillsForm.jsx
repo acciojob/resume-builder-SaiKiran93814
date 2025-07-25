@@ -18,7 +18,7 @@ export default function SkillsForm() {
 
   return (
     <div>
-      <h2>Skills Section</h2>
+      <h2>Add your Skills</h2>
       <input placeholder="Skill" value={skill} onChange={e => setSkill(e.target.value)} />
       <button onClick={handleAdd}>Add Skill</button>
       <ul>

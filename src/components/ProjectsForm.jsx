@@ -16,7 +16,7 @@ export default function ProjectsForm() {
 
   return (
     <div>
-      <h2>Mini Project Section</h2>
+      <h2>Add your Mini Projects</h2>
       <input placeholder="Project Name" value={project.projectName} onChange={e => setProject({ ...project, projectName: e.target.value })} />
       <input placeholder="Tech Stack" value={project.techStack} onChange={e => setProject({ ...project, techStack: e.target.value })} />
       <input placeholder="Description" value={project.description} onChange={e => setProject({ ...project, description: e.target.value })} />

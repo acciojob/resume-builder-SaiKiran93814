@@ -18,7 +18,7 @@ export default function SocialForm() {
 
   return (
     <div>
-      <h2>Social Media Section</h2>
+      <h2>Add your Social Media Links</h2>
       <input placeholder="Social Link" value={social} onChange={e => setSocial(e.target.value)} />
       <button onClick={handleAdd}>Add Social</button>
       <ul>

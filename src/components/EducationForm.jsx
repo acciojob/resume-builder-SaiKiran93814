@@ -15,7 +15,7 @@ export default function EducationForm() {
 
   return (
     <div>
-      <h2>Education Section</h2>
+     <h2>Add your Education Details</h2>
       <input placeholder="Course Name" value={edu.courseName} onChange={e => setEdu({ ...edu, courseName: e.target.value })} />
       <input placeholder="Completion Year" value={edu.completionYear} onChange={e => setEdu({ ...edu, completionYear: e.target.value })} />
       <input placeholder="College" value={edu.college} onChange={e => setEdu({ ...edu, college: e.target.value })} />
