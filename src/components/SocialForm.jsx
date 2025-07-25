@@ -1,7 +1,5 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
 import { addSocial, deleteSocial } from '../features/socialSlice';
 
 export default function SocialForm() {
@@ -19,13 +17,27 @@ export default function SocialForm() {
   return (
     <div>
       <h2>Add your Social Media Links</h2>
-      <input placeholder="Social Link" value={social} onChange={e => setSocial(e.target.value)} />
-      <button onClick={handleAdd}>Add Social</button>
+      {/* ✅ ADD name="Social" to match Cypress */}
+      <input
+        name="Social" 
+        placeholder="Social Link"
+        value={social}
+        onChange={e => setSocial(e.target.value)}
+      />
+      <button id="add_social" onClick={handleAdd}>Add Social</button>
       <ul>
         {socialLinks.map((s, i) => (
-          <li key={i}>{s} <button onClick={() => dispatch(deleteSocial(i))}>Delete</button></li>
+          <li key={i}>
+            {s} 
+            <button onClick={() => dispatch(deleteSocial(i))}>Delete</button>
+          </li>
         ))}
       </ul>
+      {/* ✅ ADD navigation buttons to match other form steps */}
+      <div className="nav-buttons">
+        <button id="back">Back</button>
+        <button id="next">Next</button>
+      </div>
     </div>
   );
 }

@@ -1,31 +1,17 @@
 import React from 'react';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
-import { addSkill, deleteSkill } from '../features/skillsSlice';
-
-export default function SkillsForm() {
-  const [skill, setSkill] = useState('');
-  const dispatch = useDispatch();
-  const skills = useSelector(state => state.skills);
-
-  const handleAdd = () => {
-    if (skill) {
-      dispatch(addSkill(skill));
-      setSkill('');
-    }
-  };
-
+const SkillsForm = () => {
   return (
     <div>
       <h2>Add your Skills</h2>
-      <input placeholder="Skill" value={skill} onChange={e => setSkill(e.target.value)} />
-      <button onClick={handleAdd}>Add Skill</button>
-      <ul>
-        {skills.map((s, i) => (
-          <li key={i}>{s} <button onClick={() => dispatch(deleteSkill(i))}>Delete</button></li>
-        ))}
-      </ul>
+      <input name="skill" placeholder="Enter a skill" /> {/* EXACT name */}
+      <button id="add_skill">Add Skill</button>
+      <div className="nav-buttons">
+        <button id="back">Back</button>
+        <button id="next">Next</button>
+      </div>
     </div>
   );
-}
+};
+
+export default SkillsForm;
