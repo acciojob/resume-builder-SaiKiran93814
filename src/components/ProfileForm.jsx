@@ -13,12 +13,14 @@ export default function ProfileForm() {
 
   return (
     <div>
-      <h2>Profile Section</h2>
+      <h2>Add your profile details</h2>  
+
       <input name="fname" value={profile.fname} onChange={handleChange} placeholder="First Name" />
       <input name="lname" value={profile.lname} onChange={handleChange} placeholder="Last Name" />
       <input name="phone" value={profile.phone} onChange={handleChange} placeholder="Phone Number" />
       <input name="address" value={profile.address} onChange={handleChange} placeholder="Address" />
       <input type="file" name="url" />
+        <button id="next">Next</button>
     </div>
   );
 }

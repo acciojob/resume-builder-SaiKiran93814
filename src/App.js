@@ -16,7 +16,8 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <h1>Resume Generator</h1>
+   <h1>RESUME GENERATOR</h1> 
+
       {components[step]}
       <div className="nav-buttons">
         {step > 0 && <button onClick={() => setStep(step - 1)}>Back</button>}
